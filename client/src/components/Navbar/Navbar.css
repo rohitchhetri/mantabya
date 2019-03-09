@@ -1,0 +1,30 @@
+
+.navbar {
+	float: left;
+	margin-left: -50px;
+}
+
+.navbar li {
+	display: inline-block;
+	margin-left: 35px;
+	padding-top: 0;
+	font-size: 20px;
+}
+
+.navbar ul > li > a {
+	text-decoration: none;
+	color: #808088;
+	text-transform: uppercase;;
+}
+
+.navbar ul > li > a:hover {
+	color: black;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #fff;
+}
