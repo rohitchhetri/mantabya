@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import Header from '../Header/Header';
@@ -19,7 +20,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route exact path="/surveys" component={Articles} />
                         <Route path="/surveys/new" component={Login} />
-
+                        <button type="button" class="btn btn-primary">Primary</button>
                     </div>
                 </BrowserRouter>
             </div>
